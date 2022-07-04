@@ -1,9 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 import { typography } from './typography';
 import { colors } from './colorsLight';
-import { ThemeOptions } from '@mui/material';
 
-const theme: ThemeOptions = createTheme({
+const theme = createTheme({
   palette: { ...colors },
   typography: { ...typography },
   components: {
