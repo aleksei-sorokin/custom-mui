@@ -7,8 +7,9 @@ import { MuiTableRow } from './TableRow';
 import { MuiTablePagination } from './TablePagination';
 import { MuiIconButton } from './IconButton';
 import { MuiChip } from './Chip';
+import { Components } from '@mui/material';
 
-export const components = {
+export const components: Components = {
   MuiButton,
   MuiCard,
   MuiTable,
