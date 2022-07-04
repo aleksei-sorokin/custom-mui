@@ -1,12 +1,3 @@
-declare module '@mui/material/styles/createPalette' {
-	interface Palette {
-		gray?: Palette['primary'];
-	}
-	interface PaletteOptions {
-		gray?: PaletteOptions['primary'];
-	}
-}
-
 export const colors = {
 	// mode: 'light',
 	primary: {
