@@ -7,7 +7,7 @@ const theme = createTheme({
   palette: { ...colors },
   typography: { ...typography },
   components: {
-    ...components
+    ...components,
   },
 });
 

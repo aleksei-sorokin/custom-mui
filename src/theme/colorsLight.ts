@@ -1,5 +1,4 @@
 export const colors = {
-	// mode: 'light',
 	primary: {
 		main: '#0091EA',
 		light: '#4FC3F7',
@@ -82,7 +81,7 @@ export const colors = {
 	text: {
 		primary: 'rgba(0, 0, 0, 0.87)',
 		secondary: 'rgba(0, 0, 0, 0.6)',
-		disabled: 'rgba(0, 0, 0, 0.87)',
+		disabled: 'rgba(0, 0, 0, 0.38)',
 	},
 	action: {
 		active: 'rgba(0, 0, 0, 0.54)',
@@ -92,16 +91,16 @@ export const colors = {
 		disabledBackground: 'rgba(0, 0, 0, 0.12)',
 		focus: ' rgba(0, 0, 0, 0.12)',
 	},
-	// other: {
-	// 	divider: 'rgba(0, 0, 0, 0.12)',
-	// 	outlineBorder: '#FFFFFF',
-	// 	standardInputLine: '#FFFFFF',
-	// 	dackdropOverlay: 'rgba(0, 0, 0, 0.5)',
-	// 	ratingActive: '#FFB400',
-	// 	snackbarBg: '#323232',
-	// },
-	// background: {
-	// 	default: '#F6F8FB',
-	// 	paper: '#FFFFFF',
-	// },
+	other: {
+		divider: 'rgba(0, 0, 0, 0.12)',
+		outlineBorder: '#FFFFFF',
+		standardInputLine: '#FFFFFF',
+		dackdropOverlay: 'rgba(0, 0, 0, 0.5)',
+		ratingActive: '#FFB400',
+		snackbarBg: '#323232',
+	},
+	background: {
+		default: '#F6F8FB',
+		paper: '#FFFFFF',
+	},
 };

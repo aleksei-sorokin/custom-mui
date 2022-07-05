@@ -8,13 +8,9 @@ export const MuiButton:OverridesStyleRules = {
       borderRadius: '6px',
       minWidth: 'unset',
     },
-    sizeLarge: {
-      ...typography.buttonLarge,
-    },
+    sizeLarge: typography.buttonLarge,
     sizeMedium: typography.buttonMedium,
-    sizeSmall: {
-      ...typography.buttonSmall,
-    },
+    sizeSmall: typography.buttonSmall,
     contained: {
       sizeLarge: {
         padding: '8px 22px',

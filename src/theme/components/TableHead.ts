@@ -1,3 +1,5 @@
+import { typography } from '../typography';
+import { colors } from './../colorsLight';
 export const MuiTableHead = {
 	styleOverrides: {
 		root: {
@@ -8,6 +10,8 @@ export const MuiTableHead = {
 			th: {
 				border: 'none',
 				background: 'none',
+				color: colors.action.active,
+				...typography.subtitle2
 			},
 		},
 	},
