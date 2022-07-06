@@ -1,8 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Chip } from '@mui/material';
-import { ChevronLeft, ChevronRight } from '@mui/icons-material';
+import { Chip, Grid } from '@mui/material';
 
 export default {
   title: 'Example/Chip',
@@ -12,9 +11,9 @@ export default {
       type: 'string',
       description: 'Card type',
       options: ['outlined', 'filled'],
-			defaultValue: 'outlined',
+      defaultValue: 'outlined',
       control: {
-        type: 'select',
+        type: 'radio',
       },
     },
 		clickable: {
@@ -24,40 +23,50 @@ export default {
 			control: {
 				type: 'radio'
 			}
-		},
-    color: {
-      type: 'string',
-      description: 'Button color',
-			defaultValue: 'default',
-      options: ['default', 'primary', 'secondary', 'error', 'warning', 'info', 'success'],
-      control: {
-        type: 'select',
-      },
-    },
-		onDelete: {
-			type: 'boolean',
-			options: [true, false],
-			defaultValue: false,
-			control: {
-				type: 'radio'
-			}
-		},
-		size: {
-			type: 'string',
-			options: ['medium', 'small'],
-			defaultValue: 'small',
-			control: {
-				type: 'radio'
-			}
 		}
   },
 } as ComponentMeta<typeof Chip>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Chip> = (args) => <Chip {...args} />;
+const Template: ComponentStory<typeof Chip> = (args) => (
+  <Grid container spacing={2}>
+    <Grid
+      xs={12}
+      item
+      sx={{
+        '.MuiChip-root': {
+          margin: '10px',
+        },
+      }}>
+      <Chip {...args} size='medium' />
+      <Chip {...args} size='medium' onDelete={() => {}} />
+      <Chip {...args} size='medium' color='primary' />
+      <Chip {...args} size='medium' color='secondary' />
+      <Chip {...args} size='medium' color='error' />
+      <Chip {...args} size='medium' color='warning' />
+      <Chip {...args} size='medium' color='info' />
+      <Chip {...args} size='medium' color='success' />
+    </Grid>
+    <Grid
+      xs={12}
+      item
+      sx={{
+        '.MuiChip-root': {
+          margin: '10px',
+        },
+      }}>
+      <Chip {...args} size='small' />
+      <Chip {...args} size='small' onDelete={() => {}} />
+      <Chip {...args} size='small' color='primary' />
+      <Chip {...args} size='small' color='secondary' />
+      <Chip {...args} size='small' color='error' />
+      <Chip {...args} size='small' color='warning' />
+      <Chip {...args} size='small' color='info' />
+      <Chip {...args} size='small' color='success' />
+    </Grid>
+  </Grid>
+);
 
 export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   label: 'Chip',
 };

@@ -1,29 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Select, MenuItem, InputLabel, FormControl, FormHelperText } from '@mui/material';
+import { Select, MenuItem, InputLabel, FormControl, FormHelperText, Grid } from '@mui/material';
 export default {
   title: 'Example/Select',
-  component: Select,
+  component: FormControl,
   argTypes: {
-    variant: {
-      type: 'string',
-      description: 'Button type',
-      defaultValue: 'outlined',
-      options: ['filled', 'outlined', 'standard'],
-      control: {
-        type: 'select',
-      },
-    },
-    size: {
-      type: 'string',
-      description: 'Button size',
-      options: ['medium', 'small'],
-      defaultValue: 'small',
-      control: {
-        type: 'radio',
-      },
-    },
     fullWidth: {
       type: 'boolean',
       description: 'Fullwidth button',
@@ -34,45 +16,141 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof Select>;
+} as ComponentMeta<typeof FormControl>;
 
-const Template: ComponentStory<typeof Select> = (args) => (
-  <React.Fragment>
-    <FormControl {...args}>
-      <InputLabel id='demo-simple-select-label'>Select</InputLabel>
-      <Select labelId='demo-simple-select-label' {...args} value={2}>
-        <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
-        <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
-        <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
-      </Select>
-    </FormControl>
-    <br />
-    <br />
-    <FormControl {...args} disabled>
-      <InputLabel id='demo-simple-select-label-disabled'>Select</InputLabel>
-      <Select labelId='demo-simple-select-label-disabled' {...args} value={1} disabled>
-        <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
-        <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
-        <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
-      </Select>
-    </FormControl>
-    <br />
-    <br />
-    <FormControl {...args} error>
-      <InputLabel id='demo-simple-select-label-disabled'>Select</InputLabel>
-      <Select labelId='demo-simple-select-label-disabled' {...args} value={3}>
-        <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
-        <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
-        <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
-      </Select>
-      <FormHelperText>Error</FormHelperText>
-    </FormControl>
-    <br />
-    <br />
-  </React.Fragment>
-);
+const Template: ComponentStory<typeof FormControl> = (args) => {
+  const [val, setVal] = React.useState(1);
+
+  const handleChange = (event: any) => {
+    setVal(event.target.value);
+  };
+  return (
+    <Grid container>
+      <Grid
+        item
+        xs={12}
+        sx={{
+          '.MuiFormControl-root': {
+            margin: '10px',
+          },
+        }}>
+        <FormControl {...args} size='medium'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl {...args} size='medium' disabled>
+          <InputLabel id='demo-simple-select-label-disabled'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label-disabled'  label='Select' value={val} onChange={handleChange} disabled>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl {...args} size='medium' error>
+          <InputLabel id='demo-simple-select-label-disabled'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label-disabled'  label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+          <FormHelperText>Error</FormHelperText>
+        </FormControl>
+
+        <FormControl {...args} variant='filled' size='medium'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+
+        <FormControl {...args} variant='outlined' size='medium'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+
+        <FormControl {...args} variant='standard' size='medium'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        sx={{
+          '.MuiFormControl-root': {
+            margin: '10px',
+          },
+        }}>
+        <FormControl {...args} size='small'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label'  label='Select'  value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl {...args} size='small' disabled>
+          <InputLabel id='demo-simple-select-label-disabled'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label-disabled'  label='Select'  value={val} onChange={handleChange} disabled>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl {...args} size='small' error>
+          <InputLabel id='demo-simple-select-label-disabled'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label-disabled'  label='Select'  value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+          <FormHelperText>Error</FormHelperText>
+        </FormControl>
+
+
+        <FormControl {...args} variant='filled' size='small'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+
+        <FormControl {...args} variant='outlined' size='small'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+
+        <FormControl {...args} variant='standard' size='small'>
+          <InputLabel id='demo-simple-select-label'>Select</InputLabel>
+          <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
+            <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
+            <MenuItem value={2}>Lorem Lorem Lorem 2</MenuItem>
+            <MenuItem value={3}>Lorem Lorem Lorem 3</MenuItem>
+          </Select>
+        </FormControl>
+      </Grid>
+    </Grid>
+  );
+};
 
 export const Primary = Template.bind({});
-Primary.args = {
-  label: 'Select',
-};
