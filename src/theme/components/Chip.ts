@@ -1,5 +1,6 @@
 import { colors } from '../colorsLight';
 import { grey } from '@mui/material/colors';
+import { color } from '@mui/system';
 
 export const MuiChip = {
   styleOverrides: {
@@ -10,19 +11,19 @@ export const MuiChip = {
       
     },
     filled: {
-      '&.MuiChip-colorDefault': {
+      '&.MuiChip-filled.MuiChip-colorDefault': {
         color: '#fff',
         backgroundColor: grey[500],
       },
-      '&.MuiChip-colorInfo': {
+      '&.MuiChip-filled.MuiChip-colorInfo': {
         color: '#1991FF',
         backgroundColor: colors.primary.outlinedHoverBackground,
       },
-      '&.MuiChip-colorPrimary': {
+      '&.MuiChip-filled.MuiChip-colorPrimary': {
         color: '#fff',
         backgroundColor: '#1DA1F7',
       },
-      '&.MuiChip-colorSuccess': {
+      '&.MuiChip-filled.MuiChip-colorSuccess': {
         color: colors.text.secondary,
         backgroundColor: grey['A100'],
       },

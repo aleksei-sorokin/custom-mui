@@ -19,7 +19,7 @@ export default {
 } as ComponentMeta<typeof FormControl>;
 
 const Template: ComponentStory<typeof FormControl> = (args) => {
-  const [val, setVal] = React.useState(1);
+  const [val, setVal] = React.useState();
 
   const handleChange = (event: any) => {
     setVal(event.target.value);
@@ -34,7 +34,7 @@ const Template: ComponentStory<typeof FormControl> = (args) => {
             margin: '10px',
           },
         }}>
-        <FormControl {...args} size='medium'>
+        <FormControl {...args} size='medium' sx={{minWidth: '300px'}}>
           <InputLabel id='demo-simple-select-label'>Select</InputLabel>
           <Select labelId='demo-simple-select-label' label='Select' value={val} onChange={handleChange}>
             <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
@@ -95,7 +95,7 @@ const Template: ComponentStory<typeof FormControl> = (args) => {
             margin: '10px',
           },
         }}>
-        <FormControl {...args} size='small'>
+        <FormControl {...args} size='small'  sx={{minWidth: '300px'}}>
           <InputLabel id='demo-simple-select-label'>Select</InputLabel>
           <Select labelId='demo-simple-select-label'  label='Select'  value={val} onChange={handleChange}>
             <MenuItem value={1}>Lorem Lorem Lorem</MenuItem>
