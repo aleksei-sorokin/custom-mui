@@ -1,6 +1,5 @@
 import { colors } from '../colorsLight';
 import { grey } from '@mui/material/colors';
-import { color } from '@mui/system';
 
 export const MuiChip = {
   styleOverrides: {
