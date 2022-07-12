@@ -4,7 +4,7 @@ module.exports = {
     mode: 'production',
     entry: './src/index.ts',
     output: {
-        filename: "index.[hash].js",
+        filename: "index.js",
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: "umd",
         clean: true
