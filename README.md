@@ -5,12 +5,12 @@ Run
 ```
 npm install
 ```
-## Run application
+## Build application
 
-Run
+Build
 
 ```
-npm run start
+npm run build
 ```
 
 ## Run storybook
