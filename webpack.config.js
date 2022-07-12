@@ -1,10 +1,27 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-	mode: 'development',
-	entry: 'src/index.tsx',
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: "[name].[hash].js"
-	}
+    mode: 'production',
+    entry: './src/index.ts',
+    output: {
+        filename: "index.js",
+        path: path.resolve(__dirname, 'dist'),
+        libraryTarget: "umd",
+        clean: true
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
+    },
+    externals: {
+        react: 'react'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(ts|tsx)?$/,
+                use: ['ts-loader'],
+                exclude: /node_modules/
+            }
+        ],
+    }
 }
