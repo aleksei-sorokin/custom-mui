@@ -10,9 +10,16 @@ export const MuiTab: OverridesStyleRules = {
       color: colors.text.secondary,
       paddingLeft: 0,
       paddingRight: 0,
+			minWidth: 'unset',
+			minHeight: 'unset',
+			marginRight: '42px',
 
       '&.Mui-selected': {
         color: colors.text.primary,
+
+				'svg path': {
+					fill: colors.text.primary
+				}
       },
     },
   },
