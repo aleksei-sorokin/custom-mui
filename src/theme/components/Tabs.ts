@@ -18,7 +18,7 @@ export const MuiTab: OverridesStyleRules = {
         color: colors.text.primary,
 
 				'svg path': {
-					fill: colors.text.primary
+					fill: colors.primary
 				}
       },
     },
