@@ -17,11 +17,11 @@ export const MuiTab: OverridesStyleRules = {
       '&.Mui-selected': {
         color: colors.text.primary,
 
-        svg: {
-          path: {
-            fill: colors.primary,
-          },
-        },
+        // svg: {
+        //   path: {
+        //     fill: colors.primary,
+        //   },
+        // },
       },
     },
   },
