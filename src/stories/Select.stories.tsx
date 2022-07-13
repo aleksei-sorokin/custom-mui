@@ -19,7 +19,7 @@ export default {
 } as ComponentMeta<typeof FormControl>;
 
 const Template: ComponentStory<typeof FormControl> = (args) => {
-  const [val, setVal] = React.useState();
+  const [val, setVal] = React.useState(1);
 
   const handleChange = (event: any) => {
     setVal(event.target.value);

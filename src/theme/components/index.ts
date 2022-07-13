@@ -8,6 +8,9 @@ import { MuiTablePagination } from './TablePagination';
 import { MuiIconButton } from './IconButton';
 import { MuiChip } from './Chip';
 import { MuiTextField } from './TextField';
+import { MuiTab } from './Tabs';
+import { MuiMenuItem } from './MenuItem';
+import { MuiIcon } from './Icon';
 import { Components } from '@mui/material';
 
 export const components: Components = {
@@ -21,4 +24,7 @@ export const components: Components = {
   MuiIconButton,
   MuiChip,
   MuiTextField,
+  MuiTab,
+  MuiMenuItem,
+  MuiIcon
 };
