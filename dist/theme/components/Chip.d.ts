@@ -12,14 +12,14 @@ export declare const MuiChip: {
             };
             '&.MuiChip-filled.MuiChip-colorInfo': {
                 color: string;
-                backgroundColor: string | undefined;
+                backgroundColor: string;
             };
             '&.MuiChip-filled.MuiChip-colorPrimary': {
                 color: string;
                 backgroundColor: string;
             };
             '&.MuiChip-filled.MuiChip-colorSuccess': {
-                color: string | undefined;
+                color: string;
                 backgroundColor: "#f5f5f5";
             };
         };

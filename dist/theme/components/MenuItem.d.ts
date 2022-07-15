@@ -2,7 +2,7 @@ export declare const MuiMenuItem: {
     styleOverrides: {
         root: {
             '&.Mui-selected': {
-                backgroundColor: string | undefined;
+                backgroundColor: string;
             };
         };
     };

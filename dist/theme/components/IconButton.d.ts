@@ -3,8 +3,8 @@ export declare const MuiIconButton: {
         root: {
             borderRadius: string;
             '&.MuiIconButton-colorPrimary': {
-                backgroundColor: string | undefined;
-                color: string | undefined;
+                backgroundColor: string;
+                color: string;
             };
         };
     };

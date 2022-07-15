@@ -12,7 +12,7 @@ export declare const MuiTableHead: {
                 letterSpacing: string;
                 border: string;
                 background: string;
-                color: string | undefined;
+                color: string;
             };
         };
     };
