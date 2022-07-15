@@ -6,7 +6,7 @@ export const MuiTableCell = {
 		root: {
 			backgroundColor: '#FFFFFF',
 			padding: '9.5px 20px',
-			color: colors.text.secondary,
+			color: colors.text?.secondary,
 			...typography.body2,
 			'&:first-of-type': {
 				borderRadius: '6px 0 0 6px',

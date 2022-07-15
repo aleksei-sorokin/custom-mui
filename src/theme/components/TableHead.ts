@@ -10,7 +10,7 @@ export const MuiTableHead = {
 			th: {
 				border: 'none',
 				background: 'none',
-				color: colors.action.active,
+				color: colors.action?.active,
 				...typography.subtitle2
 			},
 		},

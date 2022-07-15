@@ -3,7 +3,7 @@ export const MuiMenuItem = {
 	styleOverrides: {
 		root: {
 			'&.Mui-selected': {
-				backgroundColor: colors.action.hover,
+				backgroundColor: colors.action?.hover,
 			},
 		},
 	},

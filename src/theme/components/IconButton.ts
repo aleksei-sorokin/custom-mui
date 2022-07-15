@@ -4,8 +4,8 @@ export const MuiIconButton = {
 		root: {
 			borderRadius: '6px',
 			'&.MuiIconButton-colorPrimary': {
-				backgroundColor: colors.background.default,
-				color: colors.action.active,
+				backgroundColor: colors.background?.default,
+				color: colors.action?.active,
 			},
 		},
 	},

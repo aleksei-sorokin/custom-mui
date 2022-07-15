@@ -1,7 +1,7 @@
 export declare const MuiFormControlLabel: {
     styleOverrides: {
         root: {
-            color: string;
+            color: string | undefined;
         };
     };
 };

@@ -13,7 +13,7 @@ export declare const MuiTableCell: {
             letterSpacing: string;
             backgroundColor: string;
             padding: string;
-            color: string;
+            color: string | undefined;
         };
     };
 };

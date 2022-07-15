@@ -7,7 +7,7 @@ export const MuiTab: OverridesStyleRules = {
     root: {
       textTransform: 'unset',
       ...typography.buttonMedium,
-      color: colors.text.secondary,
+      color: colors.text?.secondary,
       paddingLeft: 0,
       paddingRight: 0,
       minWidth: 'unset',
@@ -15,10 +15,10 @@ export const MuiTab: OverridesStyleRules = {
       marginRight: '42px',
 
       '&.Mui-selected': {
-        color: colors.text.primary,
+        color: colors.text?.primary,
 
         'svg path': {
-          color: colors.primary.main,
+          color: colors.primary?.main,
         },
       },
     },

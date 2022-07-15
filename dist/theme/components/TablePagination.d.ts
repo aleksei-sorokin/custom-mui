@@ -25,12 +25,12 @@ export declare const MuiTablePagination: {
             };
             '.MuiButtonBase-root': {
                 '.MuiSvgIcon-root': {
-                    fill: string;
+                    fill: string | undefined;
                 };
             };
             '.Mui-disabled': {
                 '.MuiSvgIcon-root': {
-                    fill: string;
+                    fill: string | undefined;
                 };
             };
         };

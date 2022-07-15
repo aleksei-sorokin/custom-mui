@@ -19,12 +19,12 @@ export const MuiTablePagination = {
 			},
 			'.MuiButtonBase-root': {
 				'.MuiSvgIcon-root': {
-					fill: colors.action.active,
+					fill: colors.action?.active,
 				},
 			},
 			'.Mui-disabled': {
 				'.MuiSvgIcon-root': {
-					fill: colors.action.disabled,
+					fill: colors.action?.disabled,
 				},
 			},
 		},

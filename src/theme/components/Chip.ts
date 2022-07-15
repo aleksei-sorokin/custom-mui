@@ -16,14 +16,14 @@ export const MuiChip = {
       },
       '&.MuiChip-filled.MuiChip-colorInfo': {
         color: '#1991FF',
-        backgroundColor: colors.primary.outlinedHoverBackground,
+        backgroundColor: colors.primary?.outlinedHoverBackground,
       },
       '&.MuiChip-filled.MuiChip-colorPrimary': {
         color: '#fff',
         backgroundColor: '#1DA1F7',
       },
       '&.MuiChip-filled.MuiChip-colorSuccess': {
-        color: colors.text.secondary,
+        color: colors.text?.secondary,
         backgroundColor: grey['A100'],
       },
     },
