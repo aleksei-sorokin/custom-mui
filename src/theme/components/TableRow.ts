@@ -6,7 +6,7 @@ export const MuiTableRow = {
 			borderRadius: '6px',
 			overflow: 'hidden',
 			boxShadow:
-				'0px 9px 16px rgba(159, 162, 191, 0.18), 0px 2px 2px rgba(159, 162, 191, 0.32)',
+				'0px 9px 16px  rgba(159, 162, 191, 0.18), 0px 2px 2px  rgba(159, 162, 191, 0.32)',
 		},
 	},
 };

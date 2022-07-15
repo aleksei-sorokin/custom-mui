@@ -1,3 +1,12 @@
+declare module '@mui/material/styles' {
+    interface PaletteColor {
+        containedHoverBackground?: string;
+        outlinedHoverBackground?: string;
+        outlinedRestingBackground?: string;
+        content?: string;
+        background?: string;
+    }
+}
 export declare const colors: {
     primary: {
         main: string;
