@@ -23,6 +23,7 @@ const Grid = styled(GridMui)<{ type?: string }>`
   border-radius: 6px;
   margin-bottom: 4px;
   overflow: hidden;
+  background-color: ${(props) => (props.type === 'thead' ? 'transparent' : colors.background.paper)};
 `;
 
 export default GridTableRow;
