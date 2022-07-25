@@ -15,19 +15,19 @@ export default {
 const Template: ComponentStory<typeof GridTable> = (args) => (
   <GridTable {...args}>
     <GridTableRow type='thead'>
-      <GridTableCell type='th' width={2}>Title 1</GridTableCell>
-      <GridTableCell type='th' width={true}>Title 2</GridTableCell>
-      <GridTableCell type='th' width={true}>Title 3</GridTableCell>
+      <GridTableCell type='th' xs={2}>Title 1</GridTableCell>
+      <GridTableCell type='th' xs={true}>Title 2</GridTableCell>
+      <GridTableCell type='th' xs={true}>Title 3</GridTableCell>
     </GridTableRow>
     <GridTableRow>
-      <GridTableCell width={2}>1</GridTableCell>
-      <GridTableCell width={true}>2</GridTableCell>
-      <GridTableCell width={true}>3</GridTableCell>
+      <GridTableCell xs={2}>1</GridTableCell>
+      <GridTableCell xs={true}>2</GridTableCell>
+      <GridTableCell xs={true}>3</GridTableCell>
     </GridTableRow>
     <GridTableRow>
-      <GridTableCell width={2}>1</GridTableCell>
-      <GridTableCell width={true}>2</GridTableCell>
-      <GridTableCell width={true}>3</GridTableCell>
+      <GridTableCell xs={2}>1</GridTableCell>
+      <GridTableCell xs={true}>2</GridTableCell>
+      <GridTableCell xs={true}>3</GridTableCell>
     </GridTableRow>
   </GridTable>
 );

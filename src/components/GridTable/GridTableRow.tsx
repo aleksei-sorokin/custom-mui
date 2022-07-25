@@ -7,10 +7,10 @@ interface ITrProps {
   type?: string;
 }
 
-const GridTableRow: FC<ITrProps> = ({ children, type }) => {
+const GridTableRow: FC<ITrProps> = (props) => {
   return (
-    <Grid item type={type} sx={{ backgroundColor: colors.background.paper }}>
-      {children}
+    <Grid item {...props}>
+      {props.children}
     </Grid>
   );
 };

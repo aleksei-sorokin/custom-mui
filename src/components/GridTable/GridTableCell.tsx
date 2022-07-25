@@ -5,17 +5,19 @@ import { typography } from '../../theme/typography';
 
 interface ITdProps {
   children: any;
-  width: number | boolean;
+  //xs?: number | boolean;
   type?: string;
-  alignItems?: string;
-  justifyContent?: string;
-  textAlign?: string;
+  //alignItems?: string;
+  //justifyContent?: string;
+  //textAlign?: string;
 }
 
-const GridTableCell: FC<ITdProps> = ({ children, width, type, alignItems, justifyContent, textAlign }) => {
+// const GridTableCell: FC<ITdProps> = ({ children, width, type, alignItems, justifyContent, textAlign }) => {
+const GridTableCell: FC<ITdProps> = (props) => {
   return (
-    <Grid xs={width} type={type} item alignItems={alignItems} justifyContent={justifyContent} sx={{ textAlign: textAlign || '' }}>
-      {children}
+    // <Grid xs={width} type={type} item alignItems={alignItems} justifyContent={justifyContent} sx={{ textAlign: textAlign || '' }}>
+    <Grid item {...props}>
+      {props.children}
     </Grid>
   );
 };
