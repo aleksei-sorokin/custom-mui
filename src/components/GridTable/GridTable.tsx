@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 
 const GridTable: ElementType = (props) => {
   const { children } = props;
-  return <Grid container>{children}</Grid>;
+  return <Grid container {...props}>{children}</Grid>;
 };
 
 
