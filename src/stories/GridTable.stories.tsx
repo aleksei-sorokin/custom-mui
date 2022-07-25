@@ -9,15 +9,6 @@ export default {
   title: 'Example/GridTable',
   component: GridTable,
   argTypes: {
-    stickyHeader: {
-      type: 'boolean',
-      description: 'Sticky header',
-      options: [true, false],
-      defaultValue: false,
-      control: {
-        type: 'radio',
-      },
-    },
   },
 } as ComponentMeta<typeof GridTable>;
 
@@ -27,6 +18,11 @@ const Template: ComponentStory<typeof GridTable> = (args) => (
       <GridTableCell type='th' width={2}>Title 1</GridTableCell>
       <GridTableCell type='th' width={true}>Title 2</GridTableCell>
       <GridTableCell type='th' width={true}>Title 3</GridTableCell>
+    </GridTableRow>
+    <GridTableRow>
+      <GridTableCell width={2}>1</GridTableCell>
+      <GridTableCell width={true}>2</GridTableCell>
+      <GridTableCell width={true}>3</GridTableCell>
     </GridTableRow>
     <GridTableRow>
       <GridTableCell width={2}>1</GridTableCell>
