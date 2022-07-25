@@ -1,9 +1,9 @@
-import { Grid as GridMui, styled } from '@mui/material';
+import { Grid as GridMui, GridProps, styled } from '@mui/material';
 import React, { FC } from 'react';
 import { colors } from '../../theme/colorsLight';
 import { typography } from '../../theme/typography';
 
-interface ITdProps {
+interface ITdProps extends GridProps {
   children: any;
   //xs?: number | boolean;
   type?: string;

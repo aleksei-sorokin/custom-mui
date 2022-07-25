@@ -1,8 +1,8 @@
-import { Grid as GridMui, styled } from '@mui/material';
+import { Grid as GridMui, GridProps, styled } from '@mui/material';
 import React, { FC } from 'react';
 import { colors } from '../../theme/colorsLight';
 
-interface ITrProps {
+interface ITrProps extends GridProps {
   children: any;
   type?: string;
 }

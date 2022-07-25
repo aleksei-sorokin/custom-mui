@@ -1,5 +1,6 @@
+import { GridProps } from '@mui/material';
 import { FC } from 'react';
-interface ITrProps {
+interface ITrProps extends GridProps {
     children: any;
     type?: string;
 }
