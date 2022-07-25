@@ -1,3 +1,3 @@
-import { FC } from 'react';
-declare const GridTable: FC;
+import { ElementType } from 'react';
+declare const GridTable: ElementType;
 export default GridTable;

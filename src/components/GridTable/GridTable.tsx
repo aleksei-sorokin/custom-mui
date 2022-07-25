@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import React, { ElementType } from 'react';
 import { Grid } from '@mui/material';
 
-const GridTable: FC = (props) => {
+const GridTable: ElementType = (props) => {
   const { children } = props;
   return <Grid container>{children}</Grid>;
 };
