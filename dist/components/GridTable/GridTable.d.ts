@@ -1,2 +1,5 @@
-declare const GridTable: (props: any) => JSX.Element;
+import { FC } from 'react';
+declare const GridTable: FC<{
+    props: any;
+}>;
 export default GridTable;

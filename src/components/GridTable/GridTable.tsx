@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Grid } from '@mui/material';
-import styled from '@emotion/styled';
 
-const GridTable = (props: any) => {
+const GridTable: FC<{props: any}> = (props) => {
   const { children } = props;
   return <Grid container>{children}</Grid>;
 };
