@@ -5,7 +5,7 @@ export const colors = {
     dark: '#0277BD',
     contrastText: '#FFFFFF',
     containedHoverBackground: 'linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #1890FF',
-    outlinedHoverBackground: 'rgba(24, 144, 255, 0.08)',
+    outlinedHoverBackground: '#EDF0F8',
     outlinedRestingBackground: 'rgba(63, 81, 181, 0.5)',
     content: '',
     background: '',
