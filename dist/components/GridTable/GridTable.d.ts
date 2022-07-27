@@ -1,3 +1,7 @@
 import { FC } from 'react';
-declare const GridTable: FC;
+interface IGridProps {
+    children: any;
+    sx?: any;
+}
+declare const GridTable: FC<IGridProps>;
 export default GridTable;
