@@ -1,7 +1,4 @@
 import { FC } from 'react';
-interface IGridProps {
-    children: any;
-    sx?: any;
-}
-declare const GridTable: FC<IGridProps>;
+import { GridProps } from '@mui/material';
+declare const GridTable: FC<GridProps>;
 export default GridTable;

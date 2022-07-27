@@ -1,13 +1,14 @@
-import React, { FC, Fragment } from 'react';
-import { Grid } from '@mui/material';
+import React, { FC } from 'react';
+import { Grid as GridMui, GridProps, styled } from '@mui/material';
 
-interface IGridProps {
-	children: any;
-	sx?: any;
-}
+const GridTable: FC<GridProps> = (props) => (
+  <Grid container {...props}>
+    {props.children}
+  </Grid>
+);
 
-const GridTable: FC<IGridProps> = ({children, sx}) => {
-  return <Fragment><Grid container {...sx}>{children}</Grid></Fragment>;
-};
+const Grid = styled(GridMui)`
+  margin-bottom: 28px;
+`;
 
 export default GridTable;
