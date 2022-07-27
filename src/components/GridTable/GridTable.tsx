@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FunctionComponent } from 'react';
 import { Grid } from '@mui/material';
 
 interface IGridProps {
@@ -6,7 +6,7 @@ interface IGridProps {
 	sx?: any;
 }
 
-const GridTable: FC<IGridProps> = (props) => {
+const GridTable: FunctionComponent<IGridProps> = (props) => {
   const { children, sx } = props;
   return <Grid container {...sx}>{children}</Grid>;
 };
