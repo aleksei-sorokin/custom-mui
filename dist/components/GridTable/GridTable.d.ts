@@ -1,4 +1,3 @@
 import { FC } from 'react';
-import { GridProps } from '@mui/material';
-declare const GridTable: FC<GridProps>;
+declare const GridTable: FC;
 export default GridTable;
