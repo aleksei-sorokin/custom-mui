@@ -11,6 +11,7 @@ import { MuiTextField } from './TextField';
 import { MuiTab } from './Tabs';
 import { MuiMenuItem } from './MenuItem';
 import { MuiIcon } from './Icon';
+import { MuiTypography } from './Typography';
 import { Components } from '@mui/material';
 
 export const components: Components = {
@@ -26,5 +27,6 @@ export const components: Components = {
   MuiTextField,
   MuiTab,
   MuiMenuItem,
-  MuiIcon
+  MuiIcon,
+  MuiTypography,
 };
